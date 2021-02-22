@@ -47,15 +47,13 @@ public class UserController {
 
     @RequestMapping(method = RequestMethod.POST, value = "/users/registration")
     public String userRegistration(User user) {
-        // Business logic to save the creds. of the users to teh given database
+        // Business logic to save the credentials. of the users to teh given database
 
         return "redirect:/users/login";
     }
 
     @RequestMapping("/users/logout")
-    public String userLogout(Model model) {
-        List<Post> posts = postService.getAllPosts();
-        model.addAttribute("posts", posts);
+    public String userLogout() {
         return "redirect:/";
     }
 }
