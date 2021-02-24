@@ -3,15 +3,15 @@ package com.upgrad.TechnicalBlogApplication.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "testTable")
+@Table(name = "testTable")          // test_table
 public class Test {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "testId")
+    @Column(name = "testId")            // test_id
     private int id;
 
-    @Column(name = "testName")
+    @Column(name = "testName")          // test_name
     private String name;
 
     @Column(name = "testEmail")
